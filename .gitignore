@@ -1,0 +1,55 @@
+# 虚拟环境（必须排除，跨平台不兼容）
+.venv/
+venv/
+env/
+
+# 临时文件夹和缓存
+temp/
+tmp/
+cache/
+*.body
+*.whl
+*.tar.gz
+pip-cache/
+pip_cache/
+.pip-cache/
+
+# 数据库运行时文件（锁文件是临时的）
+data/*.lock
+data/local_qdrant/*.lock
+*.db
+
+# Python 缓存（运行时生成，无意义）
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 敏感信息（不能上传，即使私密仓库）
+.env
+*.key
+*.pem
+secrets.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 测试和覆盖率
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# 日志文件
+*.log

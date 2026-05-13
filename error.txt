@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\Pytorch\MyAgent\main.py", line 12, in <module>
+    from core import get_logger, run_health_check, get_vectorstore
+  File "D:\Pytorch\MyAgent\core\__init__.py", line 2, in <module>
+    from .llm import get_llm
+  File "D:\Pytorch\MyAgent\core\llm.py", line 1, in <module>
+    from langchain_openai import ChatOpenAI
+ModuleNotFoundError: No module named 'langchain_openai'

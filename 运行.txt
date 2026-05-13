@@ -1,0 +1,17 @@
+Backend (Conda, recommended on Windows PowerShell):
+D:\MiniConda\envs\myagent\python.exe -m uvicorn main:app --reload
+
+Backend (if conda activate works in your shell):
+conda activate myagent
+uvicorn main:app --reload
+
+Frontend (Vue 3 + Vite):
+cd frontend
+npm run dev
+
+GPU PyTorch (CUDA 12.6 wheel):
+D:\MiniConda\envs\myagent\python.exe -m pip install -r requirements.cuda.txt
+
+Optional legacy UI (Streamlit):
+D:\MiniConda\envs\myagent\python.exe -m pip install -r requirements.streamlit.txt
+D:\MiniConda\envs\myagent\Scripts\streamlit.exe run app_streamlit.py
